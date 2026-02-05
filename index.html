@@ -609,6 +609,7 @@
             mask-composite: exclude;
             opacity: 0;
             transition: opacity 0.4s;
+            pointer-events: none;
         }
 
         .project-card:hover::after {
@@ -631,17 +632,22 @@
         .project-links {
             display: flex;
             gap: 1rem;
+            position: relative;
+            z-index: 10;
         }
 
         .project-link {
             color: var(--accent-blue);
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 700;
             transition: all 0.3s;
             display: flex;
             align-items: center;
             gap: 0.25rem;
+            padding: 0.5rem;
+            background: rgba(0, 212, 255, 0.1);
+            border-radius: 6px;
         }
 
         .project-link:hover {
